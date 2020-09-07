@@ -1,0 +1,43 @@
+Quiz #2
+1. What is the capital of AP?
+    A.Vizag_correct
+    B.cochin
+    C.Benguluru
+    D.Chennai
+
+2. What is the capital of TN?
+    A.Chennai_correct
+    B.Vizag
+    C.Kolkatha
+    D.cochin
+
+3. What is the capital of kerala?
+    A.Hyd
+    B.cochin_correct
+    C.Mumbai
+    D.Benguluru
+
+4. What is the capital of WB?
+    A.Benguluru
+    B.Vizag
+    C.Mumbai
+    D.Kolkatha_correct
+
+5. What is the capital of Telangana?
+    A.cochin
+    B.Kolkatha
+    C.Vizag
+    D.Hyd_correct
+
+6. What is the capital of Karnataka?
+    A.Chennai
+    B.Hyd
+    C.Benguluru_correct
+    D.Vizag
+
+7. What is the capital of Maharasthra?
+    A.Mumbai_correct
+    B.Benguluru
+    C.Hyd
+    D.Vizag
+

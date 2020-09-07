@@ -1,0 +1,21 @@
+{% extends 'products/base.html' %}
+{% block content %}
+
+<div class="container">
+                <form>
+                {% csrf_token %}
+                <table border="1">
+                <tr><td><B>Product_Name</B></td><td><B>Tesco_Price</B></td><td><B>Asda_Price</B></td></tr>
+
+                {% for Product_Name,Price in price_results.items %}
+
+                <tr><td>{{ Product_Name }} </td><td>{{ Price.Tesco }}</td><td>{{ Price.Asda }}</td></tr>
+
+                {% endfor %}
+
+                </table><br>
+                <a class="btn btn-primary" href="{% url 'home' %}">Go Back</a>
+                </form>
+</div>
+
+{% endblock %}

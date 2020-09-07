@@ -1,0 +1,23 @@
+{% extends 'products/base.html' %}
+{% block content %}
+
+        <div class="container">
+            <form action="{% url 'results' %}" method="POST">
+                {% csrf_token %}
+                {% if items_list %}
+                <div>
+                {% for items in items_list %}
+
+                <input type="checkbox" id="item" name="item" value={{ items }}><label for="item">{{ items }}</label>
+
+                {% endfor %}
+                </div>
+                <br>
+                <button class="btn btn-primary btn-sm" type="submit">Get Prices</button>
+                {% endif %}
+            </form>
+
+
+        </div>
+
+{% endblock %}

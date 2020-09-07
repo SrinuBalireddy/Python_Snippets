@@ -1,0 +1,33 @@
+{% extends 'mishipay_shopify/base.html' %}
+{% block content %}
+
+<form action="{% url 'inventory_update' 'create' %}" method="POST">
+{% csrf_token %}
+    <button id ='refresh' class="btn btn-primary btn-sm" type="submit">Create order</button>
+    <br>
+    <br>
+    <table class="table table-responsive table-striped">
+          <thead>
+                <tr>
+                  <th scope="col">Select</th>
+                  <th scope="col">Product</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Purchase Quantity</th>
+                </tr>
+          </thead>
+          <tbody>
+              {% for product in products %}
+                  {% if product.variants.0.inventory_quantity != 0 %}
+                        <tr>
+                          <td><input type="checkbox" name="items" value={{ product.variants.0.inventory_item_id }}></td>
+                          <td>{{ product.title }}</td>
+                          <td>{{ product.variants.0.price }} INR</td>
+                          <td><input type="number" name="Quantity" min="1" max  ={{ product.variants.0.inventory_quantity }}></td>
+                        </tr>
+                  {% endif %}
+              {% endfor %}
+          </tbody>
+    </table>
+</form>
+
+{% endblock content %}

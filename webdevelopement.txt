@@ -1,0 +1,34 @@
+phase1 - analysis
+website purpose
+website goals
+Target audience
+
+phase2 - Planning
+sitemap
+website structure
+Technologies used
+
+phase3 - Design
+wireframe models
+visual style
+usability,UI, UX
+
+Phase4 - Content
+Copywriting
+photos/videos
+search engine optimization(seo)
+
+phase5 - Developement
+HTML & Css coding
+Databases
+Responsive Design
+
+phase6- Testing
+Technical Testing
+Browser compatibility
+Does it fulfill its purpose?
+
+phase7 - Deployment
+Monitoring
+bug fixed 
+maintainence 

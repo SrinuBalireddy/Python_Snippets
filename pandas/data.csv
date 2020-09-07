@@ -1,0 +1,6 @@
+timestamp,history,hist-seq-no,CID,City,State,Country
+2020-05-05 00:00:00,0,1,233,blr1,tn1,india1
+2020-05-05 00:00:00,1,2,444,blr1,tn1,india1
+2020-05-06 00:00:00,0,1,555,blr2,tn2,india2
+2020-05-06 00:00:00,1,2,666,blr2,tn2,india2
+2020-05-07 00:00:00,0,1,888,blr3,tn3,india3

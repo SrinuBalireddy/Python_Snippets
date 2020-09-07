@@ -1,0 +1,1 @@
+@pyw.exe C:\Users\srinu\Desktop\Python\9readingwritingfiles\mcb.pyw % list
