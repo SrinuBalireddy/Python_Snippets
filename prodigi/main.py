@@ -23,14 +23,12 @@ inventory = [
 ]
 
 
-def fetch_rgb(image_url):
+def fetch_rgb(img_request):
     """
-    fetches the payload data from the image url and returns rgb values of the image
+    returns rgb values of the image
     :param image_url: str
     :return: rgb values
     """
-    data = dict(image_url)
-    img_request = requests.get(data['image_url'])
     img = PIL.Image.open(BytesIO(img_request.content))
     return img.getpixel((320, 240))
 
@@ -67,7 +65,13 @@ def index():
 @app.post('/image')
 def get_color(image_url: Image):
     try:
-        rgb_values = fetch_rgb(image_url)
+        data = dict(image_url)
+        img_request = requests.get(data['image_url'])
+    except requests.exceptions.MissingSchema:
+        return 'Invalid URL'
+
+    try:
+        rgb_values = fetch_rgb(img_request)
     except PIL.UnidentifiedImageError:
         return 'Invalid image url'
     return search_color(rgb_values)
